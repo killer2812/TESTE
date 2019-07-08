@@ -6,6 +6,8 @@
     <title>Lojinha do Juca</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+
+<link rel="sortcut icon" href="cropped-direitabazar-favicon.png" type="image/x-icon" />;
 </head>]
 
 <body>
@@ -17,7 +19,7 @@
     <main>
         <section class="container">
             <h2>Estoque</h2>
-            <table>
+            <table id="tbl" border="1">
                 <thead>
                     <tr>
                         <th>Nome</th>
@@ -27,16 +29,7 @@
                         <th>Ações</th>
                     </tr>
                 </thead>
-                <tbody id="tabela-produtos">
-
-                    <tr class="produto">
-                        <td class="info-nome">Maçã</td>
-                        <td class="info-quantidade">300</td>
-                        <td class="info-preçoc">2.00</td>
-                        <td class="info-preçov">3.75</td>
-                        <td class="info-ação"></td>
-                    </tr>
-                </tbody>
+     
             </table>
 
         </section>
@@ -45,13 +38,7 @@
     <script src="js/main.js"></script>
 
     <button onclick="adicionaLinha('tbl')">Adicionar</button>
-    <table id="tbl" border="1">
-        <tr>
-            <td>Produto</td>
-            <td>Valor</td>
-            <td>Acao</td>
-        </tr>
-    </table>
+ 
     
 </body>
 
