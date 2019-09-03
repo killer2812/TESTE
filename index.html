@@ -1,45 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Lojinha do Juca</title>
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <meta charset="utf-8" />
+    <title> Conversões </title>
+    <script type="text/javascript" src="./js/main.js">
 
-<link rel="sortcut icon" href="cropped-direitabazar-favicon.png" type="image/x-icon" />;
-</head>]
+    
+    </script>
+        <link rel="stylesheet" type="text/css" href="./css/reset.css">
+        <link rel="stylesheet" type="text/css" href="./css/index.css">
+</head>
 
 <body>
-    <header>
-        <div class="container">
-            <h2 class="titulo">Loja do Juca</h2>
-        </div>
-    </header>
-    <main>
-        <section class="container">
-            <h2>Estoque</h2>
-            <table id="tbl" border="1">
-                <thead>
-                    <tr>
-                        <th>Nome</th>
-                        <th>Quantidade</th>
-                        <th>Preço de compra</th>
-                        <th>Preço de venda</th>
-                        <th>Ações</th>
-                    </tr>
-                </thead>
-     
-            </table>
+    <form style="border: 110px double rgb(19, 65, 216); background-color: #DDF;
+	padding: 110px;text-align:center;" name="convert">
 
-        </section>
-    </main>
+<font face="Impact" size="5" > Fahrenheit: </font> <br />
+         <br />
+        
 
-    <script src="js/main.js"></script>
+        <input type="text" name="ftemp" size="30" id="1" onchange="convertTemp('fire')">
+        <br />
+        <br />
+       <font face="Impact" size="5" >  Celsius: </font> <br />
+         <br />
 
-    <button onclick="adicionaLinha('tbl')">Adicionar</button>
- 
+        <input type="text" name="ctemp" size="30"  id="2"   onchange="convertTemp('grau')">
+        <br />
+        <br />
+       <font face="Impact" size="5" >  Kelvin:  </font> <br />
+        <br />
     
+        <input type="text"  name="ktemp" size="30" id="3" onchange="convertTemp('kelv')">
+
+        <br /><br />
+
+
+      
+    </form>
 </body>
 
+
+</script>
 </html>
